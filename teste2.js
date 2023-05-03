@@ -25,7 +25,7 @@ function pertenceFibonacci(n) {
 
 const numero = parseInt(prompt("Digite um número inteiro: "));
 if (pertenceFibonacci(numero)) {
-    console.log(`O número ${numero} pertence à sequência de Fibonacci.`);
+    alert(`O número ${numero} pertence à sequência de Fibonacci.`);
 } else {
-    console.log(`O número ${numero} não pertence à sequência de Fibonacci.`);
+    alert(`O número ${numero} não pertence à sequência de Fibonacci.`);
 }
