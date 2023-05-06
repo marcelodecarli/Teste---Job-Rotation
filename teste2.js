@@ -1,4 +1,4 @@
-//testado no site - https://jsbin.com/wirugaximo/edit?js,console -
+const rl = require('readline-sync')
 
 function fibonacci(n) {
     if (n < 0) {
@@ -23,9 +23,9 @@ function pertenceFibonacci(n) {
     return false;
 }
 
-const numero = parseInt(prompt("Digite um número inteiro: "));
+const numero = parseInt(rl.question("Digite um número inteiro: "));
 if (pertenceFibonacci(numero)) {
-    alert(`O número ${numero} pertence à sequência de Fibonacci.`);
+    console.log(`O número ${numero} pertence à sequência de Fibonacci.`);
 } else {
-    alert(`O número ${numero} não pertence à sequência de Fibonacci.`);
+    console.log(`O número ${numero} não pertence à sequência de Fibonacci.`);
 }
